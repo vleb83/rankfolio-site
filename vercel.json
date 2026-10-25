@@ -1,15 +1,25 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/samples/(.*)",
-      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+      "source": "/(.*)\\.pdf",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
     },
     {
       "source": "/llms.txt",
-      "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }]
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
     }
-  ]
+  ],
+  "cleanUrls": true
 }
