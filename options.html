@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Options explained: calls, puts, risks and hedging strategies | Rankfolio</title>
+<meta name="description" content="A clear guide to stock options: call and put mechanics, strike price, premium and expiration, how buyers and writers make or lose money, covered calls, protective puts and a worked example.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://rankfolio.io/options">
+<meta name="theme-color" content="#0B0F14">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/logo-rankfolio.png">
+<meta property="og:site_name" content="Rankfolio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Options explained: calls, puts, risks and hedging strategies | Rankfolio">
+<meta property="og:description" content="A clear guide to stock options: call and put mechanics, strike price, premium and expiration, how buyers and writers make or lose money, covered calls, protective puts and a worked example.">
+<meta property="og:url" content="https://rankfolio.io/options">
+<meta property="og:image" content="https://rankfolio.io/og-rankfolio.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rankfolio: get your finance brand cited by AI">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Options explained: calls, puts, risks and hedging strategies | Rankfolio">
+<meta name="twitter:description" content="A clear guide to stock options: call and put mechanics, strike price, premium and expiration, how buyers and writers make or lose money, covered calls, protective puts and a worked example.">
+<meta name="twitter:image" content="https://rankfolio.io/og-rankfolio.png">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://rankfolio.io/options#article",
+   "headline": "Options explained: calls, puts, risks and hedging strategies",
+   "description": "A clear guide to stock options: call and put mechanics, strike price, premium and expiration, how buyers and writers make or lose money, covered calls, protective puts and a worked example.",
+   "abstract": "An option gives its buyer the right, but not the obligation, to buy (call) or sell (put) an asset at a set strike price before expiration, in exchange for a premium. A buyer can lose at most the premium; a call writer’s potential loss is theoretically unlimited. Investors use options to speculate or to hedge, for example with protective puts or covered calls.",
+   "inLanguage": "en",
+   "url": "https://rankfolio.io/options",
+   "mainEntityOfPage": "https://rankfolio.io/options",
+   "image": "https://rankfolio.io/og-rankfolio.png",
+   "author": {
+    "@id": "https://rankfolio.io/#org"
+   },
+   "publisher": {
+    "@id": "https://rankfolio.io/#org"
+   },
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "Options"
+    },
+    {
+     "@type": "Thing",
+     "name": "Derivatives"
+    },
+    {
+     "@type": "Thing",
+     "name": "Hedging"
+    }
+   ],
+   "genre": "Investing Fundamentals",
+   "isPartOf": {
+    "@id": "https://rankfolio.io/work#page"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://rankfolio.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Work",
+     "item": "https://rankfolio.io/work"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Options explained: calls, puts and hedging",
+     "item": "https://rankfolio.io/options"
+    }
+   ]
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://rankfolio.io/#org",
+   "name": "Rankfolio",
+   "url": "https://rankfolio.io/",
+   "logo": "https://rankfolio.io/logo-rankfolio.png",
+   "image": "https://rankfolio.io/og-rankfolio.png",
+   "email": "hello@rankfolio.io",
+   "description": "Rankfolio is an SEO and GEO content agency for finance: fintechs, investment platforms and real estate firms. It writes sourced, dated finance content built to be cited by ChatGPT, Perplexity, Gemini, Claude and Google AI Overviews.",
+   "slogan": "Get your finance brand cited by AI.",
+   "knowsAbout": [
+    "Search engine optimization",
+    "Generative engine optimization",
+    "AI search visibility",
+    "Financial content writing",
+    "Fintech",
+    "Investment platforms",
+    "Real estate",
+    "Equity analysis"
+   ],
+   "areaServed": [
+    "Europe",
+    "North America"
+   ],
+   "availableLanguage": [
+    "en",
+    "fr"
+   ],
+   "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "email": "hello@rankfolio.io",
+    "availableLanguage": [
+     "en",
+     "fr"
+    ]
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="ticker">
+<div class="wrap" aria-label="AI engines tracked">
+<span class="live">● ENGINES TRACKED</span>
+<span>CHATGPT</span><span>PERPLEXITY</span><span>GEMINI</span><span>GOOGLE AI OVERVIEWS</span><span>CLAUDE</span>
+</div>
+</div>
+
+<header class="wrap site-header">
+<a href="/" class="brand" aria-label="Rankfolio home">
+<span class="brand-mark" aria-hidden="true">R</span>
+<span class="brand-name">rankfolio</span>
+</a>
+<nav class="nav" aria-label="Main">
+<a href="/#services">Services</a>
+<a href="/#method">Method</a>
+<a href="/work" aria-current="page">Work</a>
+<a href="/#audit" class="btn">Free GEO audit</a>
+</nav>
+</header>
+
+<main id="main">
+<article class="wrap article">
+<header class="page-head" style="padding-bottom:0">
+<ol class="crumbs"><li><a href="/">Home</a></li><li><a href="/work">Work</a></li><li aria-current="page">Options explained: calls, puts and hedging</li></ol>
+<p class="eyebrow">INVESTING FUNDAMENTALS</p>
+<h1 class="page-title">Options explained: calls, puts, risks and hedging strategies</h1>
+<div class="article-meta"><span>7 MIN READ</span><span>BY <span class="yes">RANKFOLIO</span></span></div>
+</header>
+<section class="tldr" aria-labelledby="tldr-title">
+<h2 id="tldr-title">SUMMARY</h2>
+<p>An option gives its buyer the right, but not the obligation, to buy (call) or sell (put) an asset at a set strike price before expiration, in exchange for a premium. A buyer can lose at most the premium; a call writer’s potential loss is theoretically unlimited. Investors use options to speculate or to hedge, for example with protective puts or covered calls.</p>
+</section>
+<div class="prose">
+<p class="note">Charts referenced in this piece are in the original PDF linked below.</p>
+<p>Options are powerful financial instruments that, when used correctly, can yield significant returns for investors. However, they also come with inherent risks. Unlike direct investments in stocks, options allow traders to speculate on the future direction of stock prices, either betting on a rise or fall. This article explores the mechanics behind options trading, focusing on call and put options, the key factors that drive their value, and the strategies investors use to make money—or protect themselves from losses.</p>
+<h2>What are options?</h2>
+<p>At their core, options are contracts that give the buyer the right, but not the obligation, to buy or sell an underlying asset, such as a stock, at a predetermined price (strike price) on or before a specific date (expiration date). The seller of the option, known as the writer, is obligated to fulfill the contract if the buyer chooses to exercise it. There are two primary types of options: call options and put options. A call option grants the holder the right to purchase an asset at the strike price, while a put option grants the right to sell an asset at the strike price. These contracts are typically used by investors for two purposes: speculation and hedging.</p>
+<ul><li><strong>Speculation:</strong> Investors buy calls if they expect the price of the underlying asset to rise, allowing them to purchase the asset at a lower price than the market value. Conversely, they buy puts if they anticipate a price drop, allowing them to sell the asset at a price higher than the market value.</li>
+<li><strong>Hedging:</strong> Investors use options as insurance against adverse price movements in the assets they already own. For example, an investor who owns a stock and fears a market downturn may buy put options to lock in a selling price and minimize potential losses.</li></ul>
+<h2>Key elements of an option contract</h2>
+<p>When considering an option, there are several key components that determine its value and how it functions, such as:</p>
+<ul><li><strong>Strike price:</strong> The price at which the option holder can buy or sell the underlying asset. In the case of a call, it&#x27;s the price the holder can pay to acquire the asset, while for a put, it&#x27;s the price at which the holder can sell the asset. The strike price is crucial in determining whether an option is profitable at expiration.</li>
+<li><strong>Premium:</strong> This is the price paid by the buyer to the seller for the option. The premium is influenced by several factors, including the volatility of the underlying asset, the time remaining until the expiration date, and the difference between the strike price and the asset’s current market price.</li>
+<li><strong>Expiration Date:</strong> The date by which the option must be exercised. Options can expire in as little as a few days or as long as a year or more. If the option is not exercised by this date, it becomes worthless, and the buyer loses the premium they initially paid.</li>
+<li><strong>In-the-Money vs. Out-of-the-Money:</strong> An option is considered in-the-money (ITM) if it is profitable at the time of expiration. For a call, this means the market price of the underlying asset is above the strike price, while for a put, the market price is below the strike price. An option is out-of-the-money (OTM) when it would result in a loss if exercised at the current market price.</li></ul>
+<h2>Generating money</h2>
+<p>Making money with options requires understanding how the market price of the underlying asset interacts with the strike price of the option. Here’s how investors can profit:</p>
+<ul><li><strong>With call options:</strong> If you buy a call option and the price of the underlying asset rises above the strike price, you can exercise the option to buy the asset at a lower price than its current market value. You can then sell the asset on the open market, pocketing the difference. For example, if you buy a call option for a stock with a strike price of $50, and the stock’s price rises to $60, you can buy the stock at $50 and immediately sell it for $60, earning $10 per share (minus the premium paid).</li>
+<li><strong>With put options:</strong> Conversely, if you buy a put option and the price of the underlying asset falls below the strike price, you can exercise the option to sell the asset at a higher price than its market value. For instance, if you hold a put option with a strike price of $40 and the asset’s price drops to $30, you can sell the asset for $40, even though it&#x27;s worth only $30 on the market. The potential for profit is substantial, but so are the risks. If the market moves in the opposite direction than expected, the option may expire worthless, resulting in a total loss of the premium paid by the buyer.</li></ul>
+<h2>Risks</h2>
+<p>Options are not without risks, particularly for the writers of the options contracts. When you sell an option, you are taking on the obligation to fulfill the terms of the contract if the buyer chooses to exercise it. The risks are different for call and put options.</p>
+<p>For call writers, if the price of the underlying asset increases significantly beyond the strike price, the seller of the call option is required to sell the asset at the strike price, even though the asset is now worth much more on the market. Since there is no limit to how high the price of an asset can rise, the potential losses for the writer are theoretically unlimited.</p>
+<p>For put writers: If the price of the underlying asset falls sharply, the writer of a put option is obligated to purchase the asset at the strike price, even though the asset is now worth much less. However, in this case, the potential losses are capped, as the price of the asset cannot fall below zero.</p>
+<p>For option buyers, the maximum loss is limited to the premium paid for the option. However, because of the leverage involved in options trading, where small price movements can have amplified effects, the potential for loss or gain is much greater than in traditional stock investing.</p>
+<h2>Trading strategies</h2>
+<p>Investors and traders use various strategies when trading options, depending on their market outlook and risk tolerance. Some of the most popular strategies include buying calls and puts which is the simplest strategy involves buying calls if you expect the price of the underlying asset to rise and buying puts if you expect it to fall. This is a straightforward way to bet on the future direction of a stock’s price.</p>
+<p>Then, it includes selling covered calls: this strategy involves owning the underlying stock and selling call options against it. If the stock price rises above the strike price, the writer of the call must sell the stock at the strike price. This strategy generates income from the premium received for selling the call but limits potential upside gains on the stock.</p>
+<p>Another strategy is about protective puts: investors who already own a stock may buy put options as a form of insurance. If the stock’s price falls, the value of the put option increases, offsetting losses on the stock. This strategy is particularly useful for long-term investors who want to protect against short-term volatility.</p>
+<h2>Hedge against risk</h2>
+<p>One of the primary uses of options is to hedge against potential losses in a portfolio. A hedge is essentially an insurance policy against adverse price movements. Investors who own a stock and are concerned about a potential drop in its price can buy put options to protect themselves. If the stock price declines, the put option increases in value, allowing the investor to sell the stock at the higher strike price, thereby limiting their losses.</p>
+<p>Consider an investor who owns shares of a company but expects market conditions to deteriorate. By purchasing puts, the investor ensures that they can sell their shares at a predetermined price, regardless of how low the stock might fall. If the stock price does decline, the value of the puts will rise, offsetting the loss on the stock.</p>
+<h2>Practical example</h2>
+<p>Let’s consider a practical example. Imagine a trader believes that shares of a company, ABC, currently trading at $10 per share, will rise in the next month. The trader purchases a call option with a strike price of $12, a one-month expiration date, and a premium of $1 per share. Since options are typically sold in lots of 100 shares, the total cost for this contract would be $100. If the stock rises to $20 within the next 30 days, the trader can exercise the option, purchasing 100 shares at the strike price of $12 per share, for a total cost of $1,200. The trader can then sell those shares at the current market price of $20, earning $2,000. After subtracting the initial cost of the shares ($1,200) and the premium paid for the option ($100), the trader nets a profit of $700.</p>
+<p>On the other hand, if the stock fails to rise above the strike price of $12, the option will expire worthless, and the trader’s only loss will be the $100 premium paid.</p>
+</div>
+<a class="file-link" href="/samples/fundamentals-options.pdf" target="_blank" rel="noopener"><span>ORIGINAL DOCUMENT · original PDF with charts</span><span>OPEN ↗</span></a>
+<nav class="article-nav" aria-label="More work">
+<a href="/time-value-of-money-npv" class="more-link">← Time value of money and NPV</a>
+<a href="/apollo-global-management" class="more-link">Deep dive: Apollo Global Management →</a>
+</nav>
+</article>
+<section class="wrap audit" aria-labelledby="cta-title">
+<div class="audit-box" style="align-items:center">
+<div class="audit-copy">
+<h2 id="cta-title">See where AI answers place you.</h2>
+<p>Send us your site. You get a dated report on 10 buyer questions within a week.</p>
+</div>
+<a href="/#audit" class="btn" style="font-size:17px;padding:18px 28px">Request my free audit</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<span>© 2026 Rankfolio · SEO and GEO content for finance</span>
+<span class="footer-links"><a href="/work">Work</a><a href="/llms.txt">llms.txt</a><a href="mailto:hello@rankfolio.io">hello@rankfolio.io</a></span>
+</div>
+</footer>
+</body>
+</html>

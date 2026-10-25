@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The required rate of return: CAPM, beta and multifactor models | Rankfolio</title>
+<meta name="description" content="How investors set a required rate of return: the CAPM formula, beta and the equity risk premium, the security market line, the limits of CAPM, and multifactor alternatives (APT, Fama–French).">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://rankfolio.io/required-rate-of-return">
+<meta name="theme-color" content="#0B0F14">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/logo-rankfolio.png">
+<meta property="og:site_name" content="Rankfolio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The required rate of return: CAPM, beta and multifactor models | Rankfolio">
+<meta property="og:description" content="How investors set a required rate of return: the CAPM formula, beta and the equity risk premium, the security market line, the limits of CAPM, and multifactor alternatives (APT, Fama–French).">
+<meta property="og:url" content="https://rankfolio.io/required-rate-of-return">
+<meta property="og:image" content="https://rankfolio.io/og-rankfolio.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rankfolio: get your finance brand cited by AI">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The required rate of return: CAPM, beta and multifactor models | Rankfolio">
+<meta name="twitter:description" content="How investors set a required rate of return: the CAPM formula, beta and the equity risk premium, the security market line, the limits of CAPM, and multifactor alternatives (APT, Fama–French).">
+<meta name="twitter:image" content="https://rankfolio.io/og-rankfolio.png">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://rankfolio.io/required-rate-of-return#article",
+   "headline": "The required rate of return: CAPM, beta and multifactor models",
+   "description": "How investors set a required rate of return: the CAPM formula, beta and the equity risk premium, the security market line, the limits of CAPM, and multifactor alternatives (APT, Fama–French).",
+   "abstract": "Under the CAPM, the required rate of return equals the risk-free rate plus beta times the market risk premium, because only non-diversifiable market risk is rewarded. With a 3.15% risk-free rate and a 6.25% premium, a stock with a beta of 1.31 requires 11.34%. CAPM is limited by unstable betas and harder diversification, which multifactor models such as APT and Fama–French try to address.",
+   "inLanguage": "en",
+   "url": "https://rankfolio.io/required-rate-of-return",
+   "mainEntityOfPage": "https://rankfolio.io/required-rate-of-return",
+   "image": "https://rankfolio.io/og-rankfolio.png",
+   "author": {
+    "@id": "https://rankfolio.io/#org"
+   },
+   "publisher": {
+    "@id": "https://rankfolio.io/#org"
+   },
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "Capital asset pricing model"
+    },
+    {
+     "@type": "Thing",
+     "name": "Cost of equity"
+    },
+    {
+     "@type": "Thing",
+     "name": "Beta"
+    }
+   ],
+   "genre": "Corporate Finance",
+   "isPartOf": {
+    "@id": "https://rankfolio.io/work#page"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://rankfolio.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Work",
+     "item": "https://rankfolio.io/work"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "The required rate of return and CAPM",
+     "item": "https://rankfolio.io/required-rate-of-return"
+    }
+   ]
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://rankfolio.io/#org",
+   "name": "Rankfolio",
+   "url": "https://rankfolio.io/",
+   "logo": "https://rankfolio.io/logo-rankfolio.png",
+   "image": "https://rankfolio.io/og-rankfolio.png",
+   "email": "hello@rankfolio.io",
+   "description": "Rankfolio is an SEO and GEO content agency for finance: fintechs, investment platforms and real estate firms. It writes sourced, dated finance content built to be cited by ChatGPT, Perplexity, Gemini, Claude and Google AI Overviews.",
+   "slogan": "Get your finance brand cited by AI.",
+   "knowsAbout": [
+    "Search engine optimization",
+    "Generative engine optimization",
+    "AI search visibility",
+    "Financial content writing",
+    "Fintech",
+    "Investment platforms",
+    "Real estate",
+    "Equity analysis"
+   ],
+   "areaServed": [
+    "Europe",
+    "North America"
+   ],
+   "availableLanguage": [
+    "en",
+    "fr"
+   ],
+   "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "email": "hello@rankfolio.io",
+    "availableLanguage": [
+     "en",
+     "fr"
+    ]
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="ticker">
+<div class="wrap" aria-label="AI engines tracked">
+<span class="live">● ENGINES TRACKED</span>
+<span>CHATGPT</span><span>PERPLEXITY</span><span>GEMINI</span><span>GOOGLE AI OVERVIEWS</span><span>CLAUDE</span>
+</div>
+</div>
+
+<header class="wrap site-header">
+<a href="/" class="brand" aria-label="Rankfolio home">
+<span class="brand-mark" aria-hidden="true">R</span>
+<span class="brand-name">rankfolio</span>
+</a>
+<nav class="nav" aria-label="Main">
+<a href="/#services">Services</a>
+<a href="/#method">Method</a>
+<a href="/work" aria-current="page">Work</a>
+<a href="/#audit" class="btn">Free GEO audit</a>
+</nav>
+</header>
+
+<main id="main">
+<article class="wrap article">
+<header class="page-head" style="padding-bottom:0">
+<ol class="crumbs"><li><a href="/">Home</a></li><li><a href="/work">Work</a></li><li aria-current="page">The required rate of return and CAPM</li></ol>
+<p class="eyebrow">CORPORATE FINANCE</p>
+<h1 class="page-title">The required rate of return: CAPM, beta and multifactor models</h1>
+<div class="article-meta"><span>10 MIN READ</span><span>BY <span class="yes">RANKFOLIO</span></span></div>
+</header>
+<section class="tldr" aria-labelledby="tldr-title">
+<h2 id="tldr-title">SUMMARY</h2>
+<p>Under the CAPM, the required rate of return equals the risk-free rate plus beta times the market risk premium, because only non-diversifiable market risk is rewarded. With a 3.15% risk-free rate and a 6.25% premium, a stock with a beta of 1.31 requires 11.34%. CAPM is limited by unstable betas and harder diversification, which multifactor models such as APT and Fama–French try to address.</p>
+</section>
+<div class="prose">
+<p class="note">Charts referenced in this piece are in the original PDF linked below.</p>
+<p>The risk premium is the difference between the risk-free rate and the return of the market portfolio. This article looks at it in more depth. To estimate the risk premium in a fairly valued market, it’s essential to ask: What premium should be added to the risk-free rate to determine the required rate of return? Investors should start with the market portfolio and then adjust their exposure by borrowing or investing in risk-free assets based on their risk tolerance. This approach helps in evaluating an investment by considering the additional risk and return it contributes to the market portfolio.</p>
+<p>Investment risk is often broken down into components, specifically the security&#x27;s volatility and the market&#x27;s overall volatility. The objective is to transition from r (the discount rate used in company valuation) to k (the return investors expect on a specific security). This method assumes the investor has a diversified portfolio. While higher risk demands a higher return, a single investment’s failure can negate the benefits, which underscores the importance of diversification. The relevance of the risk premium emerges when it’s spread across multiple investments, making portfolio management and diversification vital in finance.</p>
+<p>Unlike a financial investor, an entrepreneur with a single investment must minimize risk through effective management, as they lack the cushion of diversification. In contrast, financial investors rely on portfolio management to assess the risk and return of each investment, applying basic portfolio theory to make informed decisions.</p>
+<h2>The return required by investors</h2>
+<p>The Capital Asset Pricing Model (CAPM), developed in the late 1950s and 1960s by Harry Markowitz, William Sharpe, John Lintner, and Jack Treynor, has become a universally applied financial model. CAPM assumes that investors act rationally, using all relevant information on financial securities to maximize returns at a given level of risk, as discussed in earlier chapters on efficient markets and investor behavior.</p>
+<p>While the capital market line describes the return of a portfolio, CAPM focuses on determining the required return for a specific security based on its risk. To minimize total risk, investors diversify their portfolios, thereby reducing specific, or diversifiable, risk. As a result, when stocks are fairly valued, investors are compensated only for the portion of risk they cannot eliminate—the market, or non-diversifiable, risk. In a market where arbitrage is possible, investors won’t receive additional compensation for risks they can mitigate through diversification.</p>
+<p>The key insight from portfolio theory is that an investor’s required rate of return is tied solely to market risk, not total risk. In a fairly valued market, diversifiable risk isn’t rewarded. Therefore, the required rate of return (k) is equal to the risk-free rate (rF) plus the risk premium for non-diversifiable, or market, risk, as expressed in the CAPM formula:</p>
+<p class="formula"><code>Required rate of return = risk-free rate + β × market risk premium</code></p>
+<p class="formula"><code>k = rF + β × (kM − rF)</code></p>
+<p>The required rate of return for the market (Km) and the sensitivity coefficient (β) are key components of the CAPM formula. The risk-free rate (Rf) is the return on a risk-free asset, which equals the actual return received since there’s no risk involved. It’s important to note that the β coefficient measures an asset&#x27;s non-diversifiable risk, not its total risk. Therefore, a stock might be generally risky but have a low β if it’s weakly correlated with the market.</p>
+<p>The difference between the expected return on the market and the risk-free rate is known as the equity risk premium. In developed economies, this typically ranges from 3% to 6%, but it’s higher in emerging markets. For instance, during the 2008 financial crisis, the equity risk premium soared to around 10% before gradually declining to about 6% by 2014.</p>
+<p>There are two types of equity risk premiums: historical and expected. The historical risk premium is calculated as the annual return of equity markets (including dividends) minus the risk-free rate. The expected risk premium, which is used in CAPM, isn’t directly observable but can be estimated by forecasting future cash flows of all companies, calculating the discount rate that equates those cash flows with current share prices, and then subtracting the risk-free rate.</p>
+<p>To determine the risk premium for an individual stock, multiply the market risk premium by the stock’s beta coefficient. For example, if the risk-free rate is 3.15% and the expected risk premium is 6.25%, a shareholder in Lufthansa, with a β of 1.31, would expect a return of 3.15% + 1.31 × 6.25% = 11.34%. Meanwhile, a shareholder in Tesco, with a β of 0.83, would expect a return of 3.15% + 0.83 × 6.25% = 8.34%. This illustrates how different β values influence expected returns based on market risk.</p>
+<h2>The properties of CAPM</h2>
+<h3>Security market line</h3>
+<p>The security market line is plotting expected returns on the y-axis against each stock&#x27;s beta coefficient on the x-axis. It’s a valuable tool for determining the required rate of return on a security based on the only risk that is compensated—the market risk.</p>
+<p>Changes in the market can be understood by observing shifts in this line:</p>
+<ul><li>A parallel shift with no change in slope (i.e., no change in the risk premium) reflects market changes due to interest rate fluctuations. For instance, a drop in interest rates usually causes a downward shift, leading to a general increase in stock prices.</li>
+<li>A non-parallel shift (or pivot) indicates a change in the risk premium, affecting the compensation for risk. In this scenario, riskier stocks will experience greater movement, while less risky stocks may remain relatively stable. The position of individual stocks relative to the securities market line also serves as a decision-making tool. If a stock, like Prada, is above the line, it offers a higher expected return for its risk, suggesting it’s undervalued. Investors might buy it, driving up the price and lowering the expected return. Conversely, a stock below the line, like Boeing, is considered overvalued. However, it&#x27;s important to act with caution, as stock prices may have already adjusted by the time you review such charts.</li></ul>
+<h2>The limits of CAPM</h2>
+<p>The Capital Asset Pricing Model (CAPM) is widely used in modern finance, based on the assumption that markets are efficient. However, there are several practical issues with the model that critics often highlight.</p>
+<h3>Limits of diversification</h3>
+<p>CAPM builds on portfolio theory, which assumes that diversification helps reduce non-diversifiable risk. Research shows that achieving effective diversification has become more complex over time. In the 1970s, a portfolio of 20 stocks could significantly reduce risk, but today at least 50 stocks are needed to achieve the same effect. This complexity arises from increased volatility of individual stocks, the rise of riskier sectors like biotechnology and technology, and the decline of diversified conglomerates. Additionally, the correlation between market returns and individual stocks is decreasing, which may weaken CAPM’s relevance as the significance of β diminishes.</p>
+<h3>The forecast beta</h3>
+<p>A major criticism of beta is its instability over time. While beta condenses extensive information into a single figure, this very simplicity can be a drawback. CAPM, used for forecasting, relies on beta to estimate expected returns based on anticipated risk. Given that beta can fluctuate, it is often more effective to use a forecasted β rather than a historical value.</p>
+<p>To address this, calculations should account for earnings and dividend consistency and sector visibility. Research has suggested that beta tends to converge towards 1, but this is counterintuitive since some sectors consistently exhibit a beta above 1. Additionally, recent economic crises have shown that the disparity between high and low beta values tends to widen during challenging periods.</p>
+<h3>The theoretical limits of CAPM</h3>
+<p>The CAPM operates under the assumption that markets are fairly valued. However, markets are not always at fair value, as evidenced by the popularity of technical analysis, which indicates doubts about market efficiency. The CAPM also assumes that market participants have rational expectations and that the model is universally accepted as correct. The development of alternative theories suggests that this universal acceptance is not guaranteed.</p>
+<p>Consequently, it is viewed as just one theoretical framework for financial markets. Although other theories and methods exist, they have not yet matched the CAPM’s appeal due to its straightforward concepts. Nonetheless, there is optimism that some criticisms of the CAPM might be resolved. For instance, research suggests that the model’s shortcomings could stem from an inaccurate estimation of the market portfolio and might be addressed by including not just stocks but also bonds and other investments, as the theory originally intended.</p>
+<h2>Multifactor models</h2>
+<h3>Arbitrage Pricing Theory (APT)</h3>
+<p>The APT model extends the CAPM by considering multiple factors affecting security returns, rather than relying solely on market risk. Proposed by Stephen Ross, APT includes various macroeconomic variables and company-specific factors. For a given security J, the return is calculated as:</p>
+<p class="formula"><code>rJ = a + b1 × V1 + b2 × V2 + … + bn × Vn + company-specific variable</code></p>
+<p>Unlike the CAPM’s single-factor approach, APT does not specify which macroeconomic variables to use; Ross’s original study included factors such as inflation, manufacturing output, risk premium, and the yield curve. This model replaces the challenging measurement of market return with multiple variables but is more suited for portfolio management rather than stock valuation.</p>
+<h3>Fama–French model</h3>
+<p>The Fama–French model, an extension of APT, focuses on company-specific factors to explain historical returns. Developed by Eugene Fama and Kenneth French, it incorporates three key factors: market return, price-to-book value ratio, and the return gap between large and small-cap stocks, which suggests a liquidity effect. The model can also include additional factors like P/E ratio, market capitalization, and past performance, challenging the efficient market theory.</p>
+<h3>Liquidity premium, size premium, and investor protection</h3>
+<p>Liquidity and its impact on returns are significant factors in determining risk. Some research shows a liquidity premium for small-cap stocks, while large-cap stocks do not exhibit this premium. In their model, the expected return on a security includes both the market premium and the liquidity premium. This approach, which adds the liquidity premium to the CAPM-derived return, contrasts with the “liquidity discount” concept.</p>
+<p>While the CAPM is foundational, its limitations underscore the need for more comprehensive models. Alternatives like APT and the Fama–French model, along with liquidity considerations, offer valuable insights, and integrating these approaches could enhance investment evaluations in evolving markets.</p>
+</div>
+<a class="file-link" href="/samples/fundamentals-required-rate-of-return.pdf" target="_blank" rel="noopener"><span>ORIGINAL DOCUMENT · original PDF with charts</span><span>OPEN ↗</span></a>
+<nav class="article-nav" aria-label="More work">
+<a href="/revenue-growth" class="more-link">← Revenue growth: sustainable or hype?</a>
+<a href="/time-value-of-money-npv" class="more-link">Time value of money and NPV →</a>
+</nav>
+</article>
+<section class="wrap audit" aria-labelledby="cta-title">
+<div class="audit-box" style="align-items:center">
+<div class="audit-copy">
+<h2 id="cta-title">See where AI answers place you.</h2>
+<p>Send us your site. You get a dated report on 10 buyer questions within a week.</p>
+</div>
+<a href="/#audit" class="btn" style="font-size:17px;padding:18px 28px">Request my free audit</a>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<span>© 2026 Rankfolio · SEO and GEO content for finance</span>
+<span class="footer-links"><a href="/work">Work</a><a href="/llms.txt">llms.txt</a><a href="mailto:hello@rankfolio.io">hello@rankfolio.io</a></span>
+</div>
+</footer>
+</body>
+</html>
