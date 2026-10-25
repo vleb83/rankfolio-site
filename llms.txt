@@ -9,6 +9,12 @@ Key facts:
 - Method: map the 10 to 20 questions buyers ask AI, run a dated baseline on every engine, publish citable content, re-run the same questions monthly.
 - Contact: hello@rankfolio.io. Free GEO audit requests: https://rankfolio.io/#audit
 
+## Founder
+
+- Victor Le Breton founded Rankfolio and writes or reviews every piece. Fund management analyst at a leading European real estate asset manager: 4+ years modelling investment funds, structuring acquisitions and financings, and reporting to investor committees on portfolios of up to €500 million. MSc Banking & Finance. Based in Paris, works in English and French.
+- About page: https://rankfolio.io/about
+- LinkedIn: https://www.linkedin.com/in/v-le-breton/
+
 ## Services
 
 - **GEO Audit** (entry, Free · [PRICE for full audit]): We ask AI engines the questions your buyers ask, and show you who gets cited, which sources they trust, and where you are missing.
@@ -38,4 +44,5 @@ Key facts:
 ## Pages
 
 - [Home](https://rankfolio.io/): services, method and free GEO audit request form
+- [About](https://rankfolio.io/about): the founder, background and credentials
 - [Work](https://rankfolio.io/work): all writing samples
